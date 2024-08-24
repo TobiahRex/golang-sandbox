@@ -3,7 +3,7 @@ package factory_iface
 
 // This pattern allows us to abstract away the creation of specific implementations of an interface.
 // The caller just needs to specify the method, and the factory returns the appropriate implementation.
-func main() {
+func Main() {
 	processor := GetPaymentProcessor("paypal")
 	if processor != nil {
 		if err := processor.Process(100.0); err != nil {

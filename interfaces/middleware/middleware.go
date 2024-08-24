@@ -2,7 +2,7 @@ package middleware_iface
 
 import "fmt"
 
-func main() {
+func Main() {
 	auth := AuthMiddleware{
 		Next: LoggingMiddleware{
 			Next: FinalHandler{},

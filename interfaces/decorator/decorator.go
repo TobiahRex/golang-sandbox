@@ -2,7 +2,7 @@ package decorator_iface
 
 import "fmt"
 
-func main() {
+func Main() {
 	coffee := SimpleCoffee{}
 	coffeeDesc := coffee.GetDescription()
 

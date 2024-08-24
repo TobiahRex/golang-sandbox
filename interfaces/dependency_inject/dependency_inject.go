@@ -8,7 +8,7 @@ The EmailNotifier struct implements the Notifier interface.
 The SendNotification function can be called with any object that implements the Notifier interface.
 This allows for easy testing and swapping of implementations.
 */
-func main() {
+func Main() {
 	notifier := EmailNotifier{
 		Email: "bob@bob.bob",
 	}
